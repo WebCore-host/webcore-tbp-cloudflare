@@ -1,0 +1,7 @@
+{
+  "name": "Texas Built Plumbing - DFW's Expert Plumbing & HVAC",
+  "description": "Professional 3-page industrial-modern website for Texas Built Plumbing serving the entire DFW Metroplex.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

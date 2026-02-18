@@ -1,21 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Services from './components/Services';
 import Blog from './components/Blog';
-// Import your other components here
+import Contact from './components/Contact';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        {/* Your existing routes */}
-        <Route path="/" element={<HomePage />} />
-        
-        {/* Add blog route */}
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
-        
-        {/* Other routes */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

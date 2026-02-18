@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import Blog from './components/Blog';
+import Blog from './components/Blog.tsx';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

@@ -1,15 +1,26 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Blog from './components/Blog';
+// Import your other components here
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Your existing routes */}
+        <Route path="/" element={<HomePage />} />
+        
+        {/* Add blog route */}
+        <Route path="/blog" element={<Blog />} />
+        
+        {/* Other routes */}
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>

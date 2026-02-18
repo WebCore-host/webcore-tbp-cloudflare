@@ -36,7 +36,7 @@ const Blog: React.FC = () => {
   const fetchBlogPosts = async () => {
     try {
       const response = await fetch(
-        `https://cdn.contentful.com/spaces/${SPACE_ID}/entries?content_type=blogPost&access_token=${ACCESS_TOKEN}&order=-fields.publishedDate`
+        `https://cdn.contentful.com/spaces/${SPACE_ID}/entries?content_type=bolgPost&access_token=${ACCESS_TOKEN}&order=-fields.publishedDate`
       );
       
       if (!response.ok) {

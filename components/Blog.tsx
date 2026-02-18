@@ -17,8 +17,9 @@ interface BlogPost {
 }
 
 // Replace these with your actual Contentful credentials
-const SPACE_ID = 'fcb03496p9b3';
-const ACCESS_TOKEN = Contentful_Delivery_API;
+
+const SPACE_ID = import.meta.env.VITE_CONTENTFUL_SPACE_ID;
+const ACCESS_TOKEN = import.meta.env.VITE_CONTENTFUL_DELIVERY_API;
 
 const Blog: React.FC = () => {
   const [filter, setFilter] = useState<string>('All');

@@ -1,6 +1,6 @@
 // Replace these with your actual Contentful credentials
 const SPACE_ID = 'fcb03496p9b3';
-const ACCESS_TOKEN = 'DF5CYxBH35mldeFrtjG_W-lA9TLVAAD21yWWitPvlv4';
+const ACCESS_TOKEN = Contentful_Delivery_API;
 
 async function fetchBlogPosts() {
     try {
